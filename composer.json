@@ -1,0 +1,42 @@
+{
+    "name": "arispati/app-locale",
+    "description": "Localization for Laravel and Lumen Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aris",
+            "email": "masarispati@gmail.com",
+            "homepage": "https://github.com/arispati"
+        }
+    ],
+    "homepage": "https://github.com/arispati/app-locale",
+    "keywords": [
+        "localization",
+        "locale",
+        "laravel",
+        "lumen"
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arispati\\AppLocale\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arispati\\AppLocale\\ServiceProvider"
+            ],
+            "aliases": {
+                "AppLocale": "Arispati\\AppLocale\\Facades\\AppLocale"
+            }
+        }
+    }
+}
